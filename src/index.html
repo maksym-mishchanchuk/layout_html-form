@@ -13,6 +13,9 @@
   </head>
   <body>
     <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      onsubmit="onSubmit()"
     >
 
       <fieldset class="container personal-information">
@@ -32,11 +35,12 @@
         <div class="input">
           <label>
             How old are You?
-            <input type="number"
-                   name="age-user"
-                   value="12"
-                   min="12"
-                   max="100"
+            <input
+              type="number"
+              name="age-user"
+              value="12"
+              min="12"
+              max="100"
             >
           </label>
         </div>
@@ -59,21 +63,23 @@
         <div class="input">
           <label>
            E-mail:
-            <input type="email"
-                  name="email"
-                  placeholder="email@example.com"
-                  required
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
             >
           </label>
         </div>
         <div class="input">
           <label>
             Password:
-            <input type="password"
-                   name="password"
-                   required
-                   minlength="6"
-                   maxlength="24"
+            <input
+              type="password"
+              name="password"
+              required
+              minlength="6"
+              maxlength="24"
             >
           </label>
         </div>
@@ -84,16 +90,18 @@
         <div class="input">
             Do you love cats?
           <label>
-            <input type="radio"
-                   name="love-cats"
-                   value="yes"
+            <input
+              type="radio"
+              name="love-cats"
+              value="yes"
             >
               Yes
           </label>
           <label>
-            <input type="radio"
-                   name="love-cats"
-                   value="no"
+            <input
+              type="radio"
+              name="love-cats"
+              value="no"
             >
             No
           </label>
@@ -118,17 +126,17 @@
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
               <option value="lada">Lada</option>
-              <option></option>
             </select>
           </label>
         </div>
         <div class="input">
           <label>
             How do you rate our work?
-            <input name="accept-agreement"
-                   type="range"
-                   step="1"
-                   value="0"
+            <input
+              name="accept-agreement"
+              type="range"
+              step="1"
+              value="0"
             >
           </label>
         </div>
@@ -139,10 +147,13 @@
         <div class="input">
           <label for="comment">
             Comments:
-            <textarea name="comment"
-                      id="comment"
-                      cols="15"
-                      rows="2"></textarea>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="15"
+              rows="2"
+            >
+            </textarea>
           </label>
         </div>
         <div class="input">
